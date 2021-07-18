@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Title-->
+    <title>Quiz App</title>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/5cc6fb9f6b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--Header-->
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+    <!--Main-->
+    <main>
+      <div class="container quiz-box">
+        <!-- Information Boz -->
+        <div class="flex justify-between align-center info">
+          <p class="quesNo">Question 1 of 10</p>
+          <p class="time"></p>
+        </div>
+        <!-- Questions-->
+        <div class="questions">
+          <h2 class="question">Questions will be here !</h2>
+
+          <ul class="option-box">
+            <li>
+              <input type="radio" name="answer" id="ans1" />
+              <label for="ans1" id="option1">Option 1 will bw Here !</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="ans2" />
+              <label for="ans2" id="option2">Option 2 will bw Here !</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="ans3" />
+              <label for="ans3" id="option3">Option 3 will bw Here !</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="ans4" />
+              <label for="ans4" id="option4">Option 4 will bw Here !</label>
+            </li>
+          </ul>
+          <!-- Buttons -->
+          <div class="flex justify-between align-center btns">
+            <button
+              class="previous"
+              style="background-color: rgba(37, 207, 207, 0.5)"
+            >
+              First
+            </button>
+            <button class="submit">Submit</button>
+            <button class="next">
+              Next <i class="far fa-arrow-alt-circle-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
